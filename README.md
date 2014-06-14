@@ -8,7 +8,7 @@ CONFIG
 ======
 + Replace or modify the provided configuration files in conf/.
 
-** Be careful with the daemons ! **
+**Be careful with the daemons !**
 
 Both nginx and php5-fpm need to be run in non-daemon mode by supervisord.
 As such, changes have been made in the config files; if you replace them by yours,
