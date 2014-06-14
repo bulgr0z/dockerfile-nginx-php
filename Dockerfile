@@ -36,6 +36,3 @@ VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/sites-available", "/home/www"]
 EXPOSE 80
 
 CMD ["/usr/bin/supervisord"]
-
-# docker run -d -p 95.85.30.201:80:80 -v /home/dockerfiles/nginx/sites-enabled:/etc/nginx/sites-enabled -v /home/dockerfiles/nginx/web:/home/www bulgroz/nginx
-# docker build --no-cache=true  -t bulgroz/nginx .
