@@ -6,7 +6,7 @@ ABOUT
 
 CONFIG
 ======
-+ Replace or modify the provided configuration files in conf/.
++ Replace or modify the provided configuration files in `conf/`.
 
 **Be careful with the daemons !**
 
@@ -27,8 +27,9 @@ USAGE
 
 This image exposes 3 volumes `/etc/nginx/sites-enabled`, `/etc/nginx/sites-available` and `/home/www`.
 Run it with
-`docker run -d -p 127.0.0.1:80:80 -v ./sites-enabled:/etc/nginx/sites-enabled bulgroz/nginxphp`
+
+`docker run -d -p 127.0.0.1:80:80 -v /<path_to_the_repo>/sites-enabled:/etc/nginx/sites-enabled bulgroz/nginxphp`
 
 * You probably want to run this image on a public interface (and not localhost),
-change the ip adresses accordingly.
+change the ip adress accordingly.
 * You can mount multiple directories by passing multiple -v arguments
