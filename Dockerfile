@@ -32,7 +32,8 @@ VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/sites-available", "/home/www"]
 # Path to your conf file & sites-* .
 # Mount with `-v <data-dir>:/etc/nginx/sites-enabled`
 
-# expose service port
+# expose http & https
 EXPOSE 80
+EXPOSE 443
 
 CMD ["/usr/bin/supervisord"]
