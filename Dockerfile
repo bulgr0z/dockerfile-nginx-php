@@ -8,9 +8,10 @@ MAINTAINER Paul Sore <paul.sore@gmail.com>
 RUN apt-get update
 RUN apt-get -y upgrade
 
-# install nginx, php5 and supervisor
+# install nginx, php5, mysql driver and supervisor
 RUN apt-get -y install nginx
 RUN apt-get -y install php5-fpm
+RUN apt-get -y install php5-mysql
 RUN apt-get -y install supervisor
 
 # Add our config files
