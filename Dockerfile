@@ -29,7 +29,7 @@ RUN mkdir /home/www
 RUN echo "<?php phpinfo() ?>" > /home/www/index.php
 
 # Define mountable directories.
-VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/sites-available", "/home/www"]
+VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/sites-available", "/var/log/nginx", "/home/www"]
 # Path to your conf file & sites-* .
 # Mount with `-v <data-dir>:/etc/nginx/sites-enabled`
 
